@@ -1,0 +1,14 @@
+var maxheightL0 = maxheight02adjusted();
+var maxheightL0px = maxheightL0 + "px";
+var maxheightqtnL0 = maxheightL0 * 0.90;
+var maxheightqtnL0px = maxheightqtnL0 + "px";
+document.getElementById("loaded0").getElementsByTagName("div")[7].style.maxHeight = maxheightL0px;
+document.getElementById("loaded0").getElementsByTagName("div")[12].style.maxHeight = maxheightL0px;
+document.getElementById("loaded0").getElementsByTagName("div")[13].style.maxHeight = maxheightqtnL0px;
+var testheightL0 = document.getElementById("loaded0").getElementsByTagName("div")[13].offsetHeight;
+var testwidthL0 = document.getElementById("loaded0").getElementsByTagName("div")[13].offsetWidth;
+var biggersideL0 = Math.max(testheightL0, testwidthL0);
+var areaL0 = biggersideL0 * biggersideL0;
+var widthL0 = areaL0 / maxheightqtnL0;
+var widthL0px = widthL0 + "px";
+document.getElementById("loaded0").getElementsByTagName("div")[12].style.maxWidth = widthL0px;
