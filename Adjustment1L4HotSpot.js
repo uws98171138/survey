@@ -1,0 +1,18 @@
+var maxheightL4 = maxheight4adjusted();
+var maxheightL4px = maxheightL4 + "px";
+var maxheightqtnL4 = qtnmaxheight4aadjusted();
+var maxheightqtnL4px = maxheightqtnL4 + "px";
+document.getElementById("loaded4").getElementsByTagName("div")[7].style.maxHeight = maxheightL4px;
+document.getElementById("loaded4").getElementsByTagName("div")[12].style.maxHeight = maxheightL4px;
+document.getElementById("loaded4").getElementsByTagName("div")[13].style.maxHeight = maxheightqtnL4px;
+var testheightL4 = document.getElementById("loaded4").getElementsByTagName("div")[13].offsetHeight;
+var testwidthL4a = document.getElementById("qtext0L4").offsetWidth;
+var testwidthL4b = document.getElementById("qbody0L4").offsetWidth;
+var testwidthL4 = Math.max(testwidthL4a, testwidthL4b);
+var largersideL4 = Math.max(testwidthL4, testheightL4);
+var areaL4 = largersideL4 * largersideL4;
+var widthL4 = areaL4 / maxheightqtnL4;
+var widthL4px = widthL4 + "px";
+document.getElementById("qtext0L4").style.width = widthL4px;
+document.getElementById("Buttons").style.width = widthL4px;
+document.getElementById("qtext0L4").setAttribute("id", "qtext0");
