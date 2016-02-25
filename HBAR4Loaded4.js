@@ -1,0 +1,11 @@
+var maxheightL4 = maxheight4adjusted();
+var maxheightL4px = maxheightL4 + "px";
+var maxheightqtnL4 = qtnmaxheight4adjusted();
+var maxheightqtnL4px = maxheightqtnL4 + "px";
+var positionskinL4px = barheights();
+document.getElementById("loaded4").getElementsByTagName("div")[7].style.top = positionskinL4px;
+document.getElementById("loaded4").getElementsByTagName("div")[12].style.maxHeight = maxheightL4px;
+document.getElementById("loaded4").getElementsByTagName("div")[13].style.maxHeight = maxheightqtnL4px;
+var testheightL4 = document.getElementById("loaded4").getElementsByTagName("div")[13].offsetHeight;
+if (testheightL4 > maxheightqtnL4) {document.getElementById("loaded4").getElementsByTagName("div")[13].style.overflowY = "scroll";}
+else {document.getElementById("loaded4").getElementsByTagName("div")[13].style.overflowY = "none";};

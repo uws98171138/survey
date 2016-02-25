@@ -1,0 +1,11 @@
+var maxheightL2 = maxheight02adjusted();
+var maxheightL2px = maxheightL2 + "px";
+var buttonheightL2 = buttonheightcalculated();
+var maxheightqtnL2 = maxheightL2 - buttonheightL2;
+var maxheightqtnL2px = maxheightqtnL2 + "px";
+document.getElementById("loaded2").getElementsByTagName("div")[9].style.maxHeight = maxheightL2px;
+document.getElementById("loaded2").getElementsByTagName("div")[14].style.maxHeight = maxheightL2px;
+document.getElementById("loaded2").getElementsByTagName("div")[15].style.maxHeight = maxheightqtnL2px;
+var testheightL2 = document.getElementById("loaded2").getElementsByTagName("div")[15].offsetHeight;
+if (testheightL2 > maxheightqtnL2) {document.getElementById("loaded2").getElementsByTagName("div")[15].style.overflowY = "scroll";}
+else {document.getElementById("loaded2").getElementsByTagName("div")[15].style.overflowY = "none";};
